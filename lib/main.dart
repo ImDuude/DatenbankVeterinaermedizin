@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter medizin demo',
+      title: 'Flutter Medizin demo',
       theme: ThemeData(
-
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Colors.white
       ),
-      home: const MyHomePage(title: 'Datenbank für Venetrinärmedizin'),
+      home: const MyHomePage(title: 'Datenbank für Veterinärmedizin'),
     );
   }
 }
@@ -36,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-
       _counter++;
     });
   }
